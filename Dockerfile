@@ -12,7 +12,7 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
     apt-get install -y --no-install-recommends \
         python3.12 python3.12-venv python3.12-dev \
         python3-pip \
-        curl ffmpeg ninja-build git git-lfs wget vim \
+        curl ffmpeg ninja-build git git-lfs aria2 wget vim \
         libgl1 libglib2.0-0 build-essential gcc && \
     \
     # make Python3.12 the default python & pip
