@@ -13,8 +13,7 @@ else
     echo "additional_params.sh not found in /workspace. Skipping..."
 fi
 
-apt-get update
-apt-get install aria2
+apt-get update && apt-get install -y aria2
 
 # Set the network volume path
 NETWORK_VOLUME="/workspace"
