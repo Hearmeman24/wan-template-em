@@ -46,8 +46,7 @@ git clone "https://github.com/Hearmeman24/CivitAI_Downloader.git" || { echo "Git
 mv CivitAI_Downloader/download.py "/usr/local/bin/" || { echo "Move failed"; exit 1; }
 chmod +x "/usr/local/bin/download.py" || { echo "Chmod failed"; exit 1; }
 rm -rf CivitAI_Downloader  # Clean up the cloned repo
-pip install huggingface_hub
-pip install onnxruntime-gpu
+pip install onnxruntime-gpu &
 
 # Change to the directory
 cd "$CUSTOM_NODES_DIR" || exit 1
@@ -139,7 +138,7 @@ mkdir -p "$WORKFLOW_DIR"
 # Ensure the file exists in the current directory before moving it
 cd /
 
-SOURCE_DIR="/ComfyUI-Wan-Template-5090/workflows"
+SOURCE_DIR="/wan-template-em/workflows"
 
 # Ensure destination directory exists
 mkdir -p "$WORKFLOW_DIR"
