@@ -108,14 +108,13 @@ download_model "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/reso
 
 sleep 2
 
-# Check if there are any aria2c processes running
-if pgrep -x "aria2c" > /dev/null; then
-  echo "Waiting for downloads to complete..."
-  wait
-  echo "All downloads completed!"
-else
-  echo "No active downloads found."
-fi
+# Keep checking until no aria2c processes are running
+while pgrep -x "aria2c" > /dev/null; do
+    echo "Downloads still in progress..."
+    sleep 5  # Check every 5 seconds
+done
+
+echo "All downloads completed!"
 
 # Download upscale model
 echo "Downloading upscale models"
