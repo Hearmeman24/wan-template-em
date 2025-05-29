@@ -170,7 +170,7 @@
         "widget_ue_connectable": {}
       },
       "widgets_values": [
-        "Select your prompt and video size here ↓\nRecommended sizes: 832*480 480*832 512*512 1280*720 720*1280"
+        "Select your prompt and video size here ↓\nRecommended sizes: 832*480 480*832 512*512 640x368 368x640"
       ],
       "color": "#432",
       "bgcolor": "#653"
