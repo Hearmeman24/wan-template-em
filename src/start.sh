@@ -14,7 +14,7 @@ else
 fi
 
 apt-get update
-apt-get install aria2c
+apt-get install aria2
 
 # Set the network volume path
 NETWORK_VOLUME="/workspace"
