@@ -106,7 +106,16 @@ echo "Downloading VAE..."
 download_model "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Wan2_1_VAE_bf16.safetensors" "$VAE_DIR/Wan2_1_VAE_bf16.safetensors"
 download_model "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors" "$VAE_DIR/wan_2.1_vae.safetensors"
 
-wait
+sleep 2
+
+# Check if there are any aria2c processes running
+if pgrep -x "aria2c" > /dev/null; then
+  echo "Waiting for downloads to complete..."
+  wait
+  echo "All downloads completed!"
+else
+  echo "No active downloads found."
+fi
 
 # Download upscale model
 echo "Downloading upscale models"
