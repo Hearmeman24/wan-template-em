@@ -1735,7 +1735,7 @@
         "widget_ue_connectable": {}
       },
       "widgets_values": [
-        "wan2.1_i2v_480p_14B_bf16.safetensors",
+        "wan2.1_i2v_480p_14B_fp16.safetensors",
         "fp8_e4m3fn",
         "default",
         false,
