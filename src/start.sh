@@ -85,6 +85,11 @@ if [ "$download_i2v_models" == "true" ]; then
   download_model "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/diffusion_models/wan2.1_i2v_480p_14B_fp16.safetensors" "$DIFFUSION_MODELS_DIR/wan2.1_i2v_480p_14B_fp16.safetensors"
 fi
 
+if [ "$download_i2v_720p_models" == "true" ]; then
+  echo "Downloading I2V models..."
+  download_model "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/diffusion_models/wan2.1_i2v_720p_14B_fp16.safetensors" "$DIFFUSION_MODELS_DIR/wan2.1_i2v_720p_14B_fp16.safetensors"
+fi
+
 # Download 480p native models
 if [ "$download_t2v_models" == "true" ]; then
   echo "Downloading T2V models..."
