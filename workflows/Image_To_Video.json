@@ -1363,7 +1363,7 @@
       "widgets_values": [
         "9",
         0.20000000000000004,
-        0.7000000000000002
+        1.0
       ],
       "color": "#222",
       "bgcolor": "#000"
@@ -1739,7 +1739,7 @@
         "default",
         "default",
         false,
-        "sageattn_qk_int8_pv_fp16_cuda",
+        "disabled",
         true
       ],
       "color": "#223",
