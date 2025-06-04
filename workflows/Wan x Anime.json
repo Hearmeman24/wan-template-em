@@ -2,7 +2,7 @@
   "id": "a65f3f11-49ea-4684-996a-43a2076234d8",
   "revision": 0,
   "last_node_id": 87,
-  "last_link_id": 190,
+  "last_link_id": 192,
   "nodes": [
     {
       "id": 51,
@@ -16,7 +16,7 @@
         78
       ],
       "flags": {},
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -90,7 +90,7 @@
         210
       ],
       "flags": {},
-      "order": 15,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -190,7 +190,7 @@
         66
       ],
       "flags": {},
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -287,10 +287,10 @@
       ],
       "size": [
         214.7587890625,
-        685.5819091796875
+        334
       ],
       "flags": {},
-      "order": 29,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -485,7 +485,7 @@
         198
       ],
       "flags": {},
-      "order": 28,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -537,7 +537,7 @@
         82
       ],
       "flags": {},
-      "order": 30,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -570,7 +570,7 @@
         66
       ],
       "flags": {},
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -610,147 +610,6 @@
       "widgets_values": []
     },
     {
-      "id": 59,
-      "type": "CR LoRA Stack",
-      "pos": [
-        -670.8140258789062,
-        838.7225952148438
-      ],
-      "size": [
-        270,
-        342
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "lora_stack",
-          "shape": 7,
-          "type": "LORA_STACK",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LORA_STACK",
-          "type": "LORA_STACK",
-          "links": [
-            115
-          ]
-        },
-        {
-          "name": "show_help",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes",
-        "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
-        "Node name for S&R": "CR LoRA Stack",
-        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
-        "widget_ue_connectable": {}
-      },
-      "widgets_values": [
-        "Off",
-        "None",
-        1,
-        1,
-        "Off",
-        "None",
-        1,
-        1,
-        "Off",
-        "None",
-        1,
-        1
-      ]
-    },
-    {
-      "id": 76,
-      "type": "ImageFromBatch+",
-      "pos": [
-        194.91616821289062,
-        954.1070556640625
-      ],
-      "size": [
-        270,
-        82
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 21,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 158
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            160
-          ]
-        }
-      ],
-      "properties": {
-        "aux_id": "cubiq/ComfyUI_essentials",
-        "ver": "9d9f4bedfc9f0321c19faf71855e228c93bd0dc9",
-        "Node name for S&R": "ImageFromBatch+",
-        "widget_ue_connectable": {}
-      },
-      "widgets_values": [
-        0,
-        1
-      ]
-    },
-    {
-      "id": 75,
-      "type": "ImageListToImageBatch",
-      "pos": [
-        178.3104705810547,
-        875.3280639648438
-      ],
-      "size": [
-        202.54061889648438,
-        26
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 19,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 159
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            158
-          ]
-        }
-      ],
-      "properties": {
-        "aux_id": "ltdrdata/ComfyUI-Impact-Pack",
-        "ver": "f8e16df2be0ed2ce914ddd242ef9eadfa386bc2f",
-        "Node name for S&R": "ImageListToImageBatch",
-        "widget_ue_connectable": {}
-      },
-      "widgets_values": []
-    },
-    {
       "id": 67,
       "type": "easy cleanGpuUsed",
       "pos": [
@@ -764,7 +623,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 18,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -802,7 +661,7 @@
         146
       ],
       "flags": {},
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -843,179 +702,6 @@
       ]
     },
     {
-      "id": 77,
-      "type": "GetImageSize+",
-      "pos": [
-        194.36245727539062,
-        995.9837036132812
-      ],
-      "size": [
-        214.20001220703125,
-        66
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 24,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 160
-        }
-      ],
-      "outputs": [
-        {
-          "name": "width",
-          "type": "INT",
-          "slot_index": 0,
-          "links": [
-            180
-          ]
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "slot_index": 1,
-          "links": [
-            177
-          ]
-        },
-        {
-          "name": "count",
-          "type": "INT",
-          "links": null
-        }
-      ],
-      "properties": {
-        "aux_id": "cubiq/ComfyUI_essentials",
-        "ver": "33ff89fd354d8ec3ab6affb605a79a931b445d99",
-        "Node name for S&R": "GetImageSize+",
-        "widget_ue_connectable": {},
-        "cnr_id": "comfyui_essentials"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 84,
-      "type": "SimpleMath+",
-      "pos": [
-        461.8143005371094,
-        1012.4060668945312
-      ],
-      "size": [
-        270,
-        98
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 26,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "a",
-          "shape": 7,
-          "type": "*",
-          "link": 180
-        },
-        {
-          "name": "b",
-          "shape": 7,
-          "type": "*",
-          "link": 182
-        },
-        {
-          "name": "c",
-          "shape": 7,
-          "type": "*",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "INT",
-          "type": "INT",
-          "links": []
-        },
-        {
-          "name": "FLOAT",
-          "type": "FLOAT",
-          "links": null
-        }
-      ],
-      "title": "Width",
-      "properties": {
-        "aux_id": "cubiq/ComfyUI_essentials",
-        "ver": "9d9f4bedfc9f0321c19faf71855e228c93bd0dc9",
-        "widget_ue_connectable": {},
-        "Node name for S&R": "SimpleMath+"
-      },
-      "widgets_values": [
-        "a*b"
-      ]
-    },
-    {
-      "id": 83,
-      "type": "SimpleMath+",
-      "pos": [
-        452.9222717285156,
-        969.3204345703125
-      ],
-      "size": [
-        270,
-        98
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 27,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "a",
-          "shape": 7,
-          "type": "*",
-          "link": 177
-        },
-        {
-          "name": "b",
-          "shape": 7,
-          "type": "*",
-          "link": 183
-        },
-        {
-          "name": "c",
-          "shape": 7,
-          "type": "*",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "INT",
-          "type": "INT",
-          "links": []
-        },
-        {
-          "name": "FLOAT",
-          "type": "FLOAT",
-          "links": null
-        }
-      ],
-      "title": "Height",
-      "properties": {
-        "aux_id": "cubiq/ComfyUI_essentials",
-        "ver": "9d9f4bedfc9f0321c19faf71855e228c93bd0dc9",
-        "widget_ue_connectable": {},
-        "Node name for S&R": "SimpleMath+"
-      },
-      "widgets_values": [
-        "a*b"
-      ]
-    },
-    {
       "id": 7,
       "type": "CLIPTextEncode",
       "pos": [
@@ -1027,7 +713,7 @@
         180.6060791015625
       ],
       "flags": {},
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -1071,7 +757,7 @@
         154
       ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 4,
       "inputs": [
         {
@@ -1105,44 +791,6 @@
       ]
     },
     {
-      "id": 85,
-      "type": "Float",
-      "pos": [
-        455.78985595703125,
-        918.6185302734375
-      ],
-      "size": [
-        270,
-        58
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 6,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "FLOAT",
-          "type": "FLOAT",
-          "links": [
-            182,
-            183
-          ]
-        }
-      ],
-      "title": "Upscale Factor",
-      "properties": {
-        "aux_id": "M1kep/ComfyLiterals",
-        "ver": "bdddb08ca82d90d75d97b1d437a652e0284a32ac",
-        "widget_ue_connectable": {},
-        "Node name for S&R": "Float"
-      },
-      "widgets_values": [
-        "1.25"
-      ]
-    },
-    {
       "id": 86,
       "type": "WanVideoTeaCacheKJ",
       "pos": [
@@ -1154,7 +802,7 @@
         154
       ],
       "flags": {},
-      "order": 17,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -1175,8 +823,8 @@
       "properties": {
         "aux_id": "kijai/ComfyUI-KJNodes",
         "ver": "1.1.0",
-        "widget_ue_connectable": {},
         "Node name for S&R": "WanVideoTeaCacheKJ",
+        "widget_ue_connectable": {},
         "cnr_id": "comfyui-kjnodes"
       },
       "widgets_values": [
@@ -1201,7 +849,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 22,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -1244,7 +892,7 @@
         314
       ],
       "flags": {},
-      "order": 7,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1290,7 +938,7 @@
         164.31304931640625
       ],
       "flags": {},
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -1334,7 +982,7 @@
         562.0000610351562
       ],
       "flags": {},
-      "order": 25,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -1412,7 +1060,7 @@
         "widget_ue_connectable": {}
       },
       "widgets_values": [
-        -1,
+        1033225944364185,
         null,
         6,
         2.5,
@@ -1438,7 +1086,7 @@
         562
       ],
       "flags": {},
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -1513,8 +1161,7 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            145,
-            159
+            145
           ]
         }
       ],
@@ -1526,7 +1173,7 @@
         "widget_ue_connectable": {}
       },
       "widgets_values": [
-        -1,
+        788305820171288,
         null,
         15,
         6,
@@ -1552,7 +1199,7 @@
         222
       ],
       "flags": {},
-      "order": 20,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -1579,8 +1226,8 @@
       "properties": {
         "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes",
         "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
-        "widget_ue_connectable": {},
-        "Node name for S&R": "CR Upscale Image"
+        "Node name for S&R": "CR Upscale Image",
+        "widget_ue_connectable": {}
       },
       "widgets_values": [
         "4xLSDIR.pth",
@@ -1601,10 +1248,10 @@
       ],
       "size": [
         214.7587890625,
-        685.5819091796875
+        334
       ],
       "flags": {},
-      "order": 23,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -1673,6 +1320,64 @@
       },
       "color": "#2a363b",
       "bgcolor": "#3f5159"
+    },
+    {
+      "id": 59,
+      "type": "CR LoRA Stack",
+      "pos": [
+        -670.8140258789062,
+        838.7225952148438
+      ],
+      "size": [
+        270,
+        342
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "lora_stack",
+          "shape": 7,
+          "type": "LORA_STACK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LORA_STACK",
+          "type": "LORA_STACK",
+          "links": [
+            115
+          ]
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes",
+        "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+        "Node name for S&R": "CR LoRA Stack",
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "Off",
+        "None",
+        1,
+        1,
+        "Off",
+        "None",
+        1,
+        1,
+        "Off",
+        "None",
+        1,
+        1
+      ]
     }
   ],
   "links": [
@@ -1909,30 +1614,6 @@
       "*"
     ],
     [
-      158,
-      75,
-      0,
-      76,
-      0,
-      "IMAGE"
-    ],
-    [
-      159,
-      64,
-      5,
-      75,
-      0,
-      "IMAGE"
-    ],
-    [
-      160,
-      76,
-      0,
-      77,
-      0,
-      "IMAGE"
-    ],
-    [
       173,
       52,
       0,
@@ -1947,38 +1628,6 @@
       57,
       0,
       "IMAGE"
-    ],
-    [
-      177,
-      77,
-      1,
-      83,
-      0,
-      "*"
-    ],
-    [
-      180,
-      77,
-      0,
-      84,
-      0,
-      "*"
-    ],
-    [
-      182,
-      85,
-      0,
-      84,
-      1,
-      "*"
-    ],
-    [
-      183,
-      85,
-      0,
-      83,
-      1,
-      "*"
     ],
     [
       184,
@@ -2104,10 +1753,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.9229599817707003,
+      "scale": 1.0152559799477707,
       "offset": [
-        2273.4906857774176,
-        -613.1048233752755
+        751.0339592799185,
+        -561.660567791938
       ]
     },
     "node_versions": {
