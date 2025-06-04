@@ -15,6 +15,8 @@ fi
 
 apt-get update && apt-get install -y aria2
 
+
+
 # Set the network volume path
 NETWORK_VOLUME="/workspace"
 
@@ -28,6 +30,9 @@ else
     echo "NETWORK_VOLUME directory exists. Starting JupyterLab..."
     jupyter-lab --ip=0.0.0.0 --allow-root --no-browser --NotebookApp.token='' --NotebookApp.password='' --ServerApp.allow_origin='*' --ServerApp.allow_credentials=True --notebook-dir=/workspace &
 fi
+
+curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash
+filebrowser -r $NETWORK_VOLUME
 
 COMFYUI_DIR="$NETWORK_VOLUME/ComfyUI"
 WORKFLOW_DIR="$NETWORK_VOLUME/ComfyUI/user/default/workflows"
@@ -79,6 +84,7 @@ DIFFUSION_MODELS_DIR="$NETWORK_VOLUME/ComfyUI/models/diffusion_models"
 TEXT_ENCODERS_DIR="$NETWORK_VOLUME/ComfyUI/models/text_encoders"
 CLIP_VISION_DIR="$NETWORK_VOLUME/ComfyUI/models/clip_vision"
 VAE_DIR="$NETWORK_VOLUME/ComfyUI/models/vae"
+LORAS_DIR="$NETWORK_VOLUME/ComfyUI/models/loras"
 
 if [ "$download_i2v_models" == "true" ]; then
   echo "Downloading I2V models..."
@@ -104,6 +110,7 @@ download_model "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/reso
 download_model "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/open-clip-xlm-roberta-large-vit-huge-14_visual_fp16.safetensors" "$TEXT_ENCODERS_DIR/open-clip-xlm-roberta-large-vit-huge-14_visual_fp16.safetensors"
 download_model "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/umt5-xxl-enc-bf16.safetensors" "$TEXT_ENCODERS_DIR/umt5-xxl-enc-bf16.safetensors"
 
+download_model "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Wan21_CausVid_14B_T2V_lora_rank32.safetensors" "$LORAS_DIR/Wan21_CausVid_14B_T2V_lora_rank32.safetensors"
 
 # Download CLIP vision
 download_model "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors" "$CLIP_VISION_DIR/clip_vision_h.safetensors"
@@ -220,6 +227,17 @@ if [ ! -d "$NETWORK_VOLUME/ComfyUI/custom_nodes/efficiency-nodes-comfyui" ]; the
 else
     echo "Updating KJ Nodes"
     cd $NETWORK_VOLUME/ComfyUI/custom_nodes/efficiency-nodes-comfyui
+    git pull
+fi
+
+if [ ! -d "$NETWORK_VOLUME/ComfyUI/custom_nodes/ComfyUI-Notifications" ]; then
+    cd $NETWORK_VOLUME/ComfyUI/custom_nodes
+    git clone https://github.com/royceschultz/ComfyUI-Notifications.git
+    cd $NETWORK_VOLUME/ComfyUI/custom_nodes/ComfyUI-Notifications
+    pip install requirements.txt
+else
+    echo "Updating ComfyUI-Notifications"
+    cd $NETWORK_VOLUME/ComfyUI/custom_nodes/ComfyUI-Notifications
     git pull
 fi
 
