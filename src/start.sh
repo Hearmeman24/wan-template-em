@@ -32,7 +32,9 @@ else
 fi
 
 curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash
-filebrowser -r $NETWORK_VOLUME &
+mv filebrowser /usr/local/bin/
+chmod +x /usr/local/bin/filebrowser
+filebrowser -r $NETWORK_VOLUME -a 0.0.0.0 -p 8080 > "$NETWORK_VOLUME/filebrowser.log" 2>&1 &
 
 COMFYUI_DIR="$NETWORK_VOLUME/ComfyUI"
 WORKFLOW_DIR="$NETWORK_VOLUME/ComfyUI/user/default/workflows"
