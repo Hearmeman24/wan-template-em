@@ -223,7 +223,7 @@ if [ ! -d "$NETWORK_VOLUME/ComfyUI/custom_nodes/efficiency-nodes-comfyui" ]; the
     cd $NETWORK_VOLUME/ComfyUI/custom_nodes
     git clone https://github.com/jags111/efficiency-nodes-comfyui.git
     cd $NETWORK_VOLUME/ComfyUI/custom_nodes/efficiency-nodes-comfyui
-    pip install requirements.txt
+    pip install -r requirements.txt
 else
     echo "Updating KJ Nodes"
     cd $NETWORK_VOLUME/ComfyUI/custom_nodes/efficiency-nodes-comfyui
@@ -234,7 +234,7 @@ if [ ! -d "$NETWORK_VOLUME/ComfyUI/custom_nodes/ComfyUI-Notifications" ]; then
     cd $NETWORK_VOLUME/ComfyUI/custom_nodes
     git clone https://github.com/royceschultz/ComfyUI-Notifications.git
     cd $NETWORK_VOLUME/ComfyUI/custom_nodes/ComfyUI-Notifications
-    pip install requirements.txt
+    pip install -r requirements.txt
 else
     echo "Updating ComfyUI-Notifications"
     cd $NETWORK_VOLUME/ComfyUI/custom_nodes/ComfyUI-Notifications
