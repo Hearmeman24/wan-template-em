@@ -53,7 +53,7 @@
         180.6060791015625
       ],
       "flags": {},
-      "order": 8,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -97,7 +97,7 @@
         78
       ],
       "flags": {},
-      "order": 10,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -171,7 +171,7 @@
         164.31304931640625
       ],
       "flags": {},
-      "order": 7,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -250,9 +250,10 @@
         }
       ],
       "properties": {
-        "cnr_id": "comfyui-videohelpersuite",
+        "aux_id": "Kosinkadink/ComfyUI-VideoHelperSuite",
         "ver": "1.5.8",
         "Node name for S&R": "VHS_VideoCombine",
+        "cnr_id": "comfyui-videohelpersuite",
         "widget_ue_connectable": {}
       },
       "widgets_values": {
@@ -384,85 +385,6 @@
       "bgcolor": "#3f5159"
     },
     {
-      "id": 38,
-      "type": "CLIPLoader",
-      "pos": [
-        -1867.384033203125,
-        378.5164794921875
-      ],
-      "size": [
-        390,
-        106
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "slot_index": 0,
-          "links": [
-            74,
-            75,
-            116
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.18",
-        "Node name for S&R": "CLIPLoader",
-        "widget_ue_connectable": {}
-      },
-      "widgets_values": [
-        "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
-        "wan",
-        "default"
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
-    },
-    {
-      "id": 37,
-      "type": "UNETLoader",
-      "pos": [
-        -1867.384033203125,
-        532.8811645507812
-      ],
-      "size": [
-        346.7470703125,
-        82
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "slot_index": 0,
-          "links": [
-            122
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.18",
-        "Node name for S&R": "UNETLoader",
-        "widget_ue_connectable": {}
-      },
-      "widgets_values": [
-        "wan2.1_i2v_480p_14B_fp8_scaled.safetensors",
-        "default"
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
-    },
-    {
       "id": 57,
       "type": "GetImageSize+",
       "pos": [
@@ -470,11 +392,11 @@
         1270
       ],
       "size": [
-        159.13999938964844,
+        159.50155639648438,
         66
       ],
       "flags": {},
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -505,9 +427,10 @@
         }
       ],
       "properties": {
-        "cnr_id": "comfyui_essentials",
+        "aux_id": "cubiq/ComfyUI_essentials",
         "ver": "1.1.0",
         "Node name for S&R": "GetImageSize+",
+        "cnr_id": "comfyui_essentials",
         "widget_ue_connectable": {}
       },
       "widgets_values": []
@@ -524,7 +447,7 @@
         82
       ],
       "flags": {},
-      "order": 11,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -561,11 +484,11 @@
         810
       ],
       "size": [
-        199.5,
+        199.95663452148438,
         66
       ],
       "flags": {},
-      "order": 12,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -604,9 +527,10 @@
         }
       ],
       "properties": {
-        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes",
         "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
         "Node name for S&R": "CR Apply LoRA Stack",
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
         "widget_ue_connectable": {}
       },
       "widgets_values": []
@@ -642,9 +566,10 @@
         }
       ],
       "properties": {
-        "cnr_id": "comfyui-kjnodes",
+        "aux_id": "kijai/ComfyUI-KJNodes",
         "ver": "1.1.0",
         "Node name for S&R": "WanVideoTeaCacheKJ",
+        "cnr_id": "comfyui-kjnodes",
         "widget_ue_connectable": {}
       },
       "widgets_values": [
@@ -667,7 +592,7 @@
         58
       ],
       "flags": {},
-      "order": 4,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -785,10 +710,11 @@
         }
       ],
       "properties": {
-        "cnr_id": "efficiency-nodes-comfyui",
+        "aux_id": "jags111/efficiency-nodes-comfyui",
         "ver": "1.0.6",
-        "widget_ue_connectable": {},
-        "Node name for S&R": "KSampler (Efficient)"
+        "Node name for S&R": "KSampler (Efficient)",
+        "cnr_id": "efficiency-nodes-comfyui",
+        "widget_ue_connectable": {}
       },
       "widgets_values": [
         -1,
@@ -841,10 +767,11 @@
         }
       ],
       "properties": {
-        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes",
         "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
-        "widget_ue_connectable": {},
-        "Node name for S&R": "CR Upscale Image"
+        "Node name for S&R": "CR Upscale Image",
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "widget_ue_connectable": {}
       },
       "widgets_values": [
         "4x_NMKD-Siax_200k.pth",
@@ -939,10 +866,11 @@
         }
       ],
       "properties": {
-        "cnr_id": "efficiency-nodes-comfyui",
+        "aux_id": "jags111/efficiency-nodes-comfyui",
         "ver": "1.0.6",
-        "widget_ue_connectable": {},
-        "Node name for S&R": "KSampler (Efficient)"
+        "Node name for S&R": "KSampler (Efficient)",
+        "cnr_id": "efficiency-nodes-comfyui",
+        "widget_ue_connectable": {}
       },
       "widgets_values": [
         -1,
@@ -997,9 +925,10 @@
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.3.34",
-        "widget_ue_connectable": {},
-        "Node name for S&R": "VAEEncode"
-      }
+        "Node name for S&R": "VAEEncode",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": []
     },
     {
       "id": 52,
@@ -1013,7 +942,7 @@
         314
       ],
       "flags": {},
-      "order": 5,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1048,11 +977,90 @@
       "bgcolor": "#3f5159"
     },
     {
+      "id": 37,
+      "type": "UNETLoader",
+      "pos": [
+        -1867.384033203125,
+        532.8811645507812
+      ],
+      "size": [
+        346.7470703125,
+        82
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            122
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.18",
+        "Node name for S&R": "UNETLoader",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "wan2.1_i2v_480p_14B_fp16.safetensors",
+        "default"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 38,
+      "type": "CLIPLoader",
+      "pos": [
+        -1867.384033203125,
+        378.5164794921875
+      ],
+      "size": [
+        390,
+        106
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "slot_index": 0,
+          "links": [
+            74,
+            75,
+            116
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.18",
+        "Node name for S&R": "CLIPLoader",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "wan",
+        "default"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
       "id": 59,
       "type": "CR LoRA Stack",
       "pos": [
-        -670,
-        820
+        -670.8140258789062,
+        838.7225952148438
       ],
       "size": [
         270,
@@ -1084,9 +1092,10 @@
         }
       ],
       "properties": {
-        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes",
         "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
         "Node name for S&R": "CR LoRA Stack",
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
         "widget_ue_connectable": {}
       },
       "widgets_values": [
@@ -1099,7 +1108,7 @@
         1,
         1,
         "Off",
-        "Wan\\Wan21_CausVid_14B_T2V_lora_rank32.safetensors",
+        "None",
         1,
         1
       ]
@@ -1438,10 +1447,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.6303940863128814,
+      "scale": 0.8390545288824456,
       "offset": [
-        2135.9033184488517,
-        326.97526812523523
+        2097.778349443375,
+        -224.58429180111898
       ]
     },
     "node_versions": {
@@ -1453,7 +1462,7 @@
     "VHS_MetadataImage": true,
     "VHS_KeepIntermediate": true,
     "ue_links": [],
-    "frontendVersion": "1.19.6"
+    "frontendVersion": "1.20.7"
   },
   "version": 0.4
 }

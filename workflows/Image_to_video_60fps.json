@@ -1991,7 +1991,7 @@
         "widget_ue_connectable": {}
       },
       "widgets_values": {
-        "frame_rate": 32,
+        "frame_rate": 60,
         "loop_count": 0,
         "filename_prefix": "Hunyuan/videos/30/vid",
         "format": "video/h264-mp4",
