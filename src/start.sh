@@ -102,6 +102,8 @@ download_model "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/reso
 echo "Downloading text encoders..."
 download_model "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors" "$TEXT_ENCODERS_DIR/umt5_xxl_fp8_e4m3fn_scaled.safetensors"
 download_model "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/open-clip-xlm-roberta-large-vit-huge-14_visual_fp16.safetensors" "$TEXT_ENCODERS_DIR/open-clip-xlm-roberta-large-vit-huge-14_visual_fp16.safetensors"
+download_model "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/umt5-xxl-enc-bf16.safetensors" "$TEXT_ENCODERS_DIR/umt5-xxl-enc-bf16.safetensors"
+
 
 # Download CLIP vision
 download_model "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors" "$CLIP_VISION_DIR/clip_vision_h.safetensors"
@@ -209,6 +211,18 @@ else
     cd $NETWORK_VOLUME/ComfyUI/custom_nodes/ComfyUI-KJNodes
     git pull
 fi
+
+if [ ! -d "$NETWORK_VOLUME/ComfyUI/custom_nodes/efficiency-nodes-comfyui" ]; then
+    cd $NETWORK_VOLUME/ComfyUI/custom_nodes
+    git clone https://github.com/jags111/efficiency-nodes-comfyui.git
+    cd $NETWORK_VOLUME/ComfyUI/custom_nodes/efficiency-nodes-comfyui
+    pip install requirements.txt
+else
+    echo "Updating KJ Nodes"
+    cd $NETWORK_VOLUME/ComfyUI/custom_nodes/efficiency-nodes-comfyui
+    git pull
+fi
+
 
 # Install dependencies
 pip install --no-cache-dir -r $NETWORK_VOLUME/ComfyUI/custom_nodes/ComfyUI-WanVideoWrapper/requirements.txt
