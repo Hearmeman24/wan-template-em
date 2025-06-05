@@ -113,6 +113,7 @@ download_model "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/open-cl
 download_model "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/umt5-xxl-enc-bf16.safetensors" "$TEXT_ENCODERS_DIR/umt5-xxl-enc-bf16.safetensors"
 
 download_model "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Wan21_CausVid_14B_T2V_lora_rank32_v1_5_no_first_block.safetensors" "$LORAS_DIR/Wan21_CausVid_14B_T2V_lora_rank32_v1_5_no_first_block.safetensors"
+download_model "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Wan21_CausVid_14B_T2V_lora_rank32_v2.safetensors" "$LORAS_DIR/Wan21_CausVid_14B_T2V_lora_rank32_v2.safetensors"
 download_model "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Wan21_AccVid_T2V_14B_lora_rank32_fp16.safetensors" "$LORAS_DIR/Wan21_AccVid_T2V_14B_lora_rank32_fp16.safetensors"
 download_model "https://huggingface.co/Kijai/Wan2.1-Fun-Reward-LoRAs-comfy/resolve/main/Wan2.1-Fun-14B-InP-HPS2.1_reward_lora_comfy.safetensors" "$LORAS_DIR/Wan2.1-Fun-14B-InP-HPS2.1_reward_lora_comfy.safetensors"
 
